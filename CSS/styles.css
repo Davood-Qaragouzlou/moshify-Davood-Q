@@ -241,6 +241,17 @@ a{
     color: #fff;
 }
 
+.btn--outline-plan{
+    background: var(--color-headings);
+    color: #fff;
+}
+
+.btn--outline-plan:hover{
+    background: #fff;
+    color: var(--color-headings);
+    border: 2px solid var(--color-headings);
+}
+
 .btn--stretched{
     padding-right: 6rem;
     padding-left: 6rem;
@@ -318,11 +329,17 @@ a{
     color: #fff;
 }
 
+.card--primary .badge--primary{
+    background: #126de4;
+}
 .card--secondary .badge--secondary{
     background: #02cdf1;
 }
 
 /* Plan */
+.plan{
+    transition: transform .2s ease-out;
+}
 
 .plan__name{
     color: #fff;
@@ -353,6 +370,10 @@ a{
     margin-bottom: 2rem;
 }
 
+.plan--popular{
+   transform: scale(1.1);
+}
+
 .plan--popular .card__header{
     position: relative;
 }
@@ -365,6 +386,15 @@ a{
     top: -6px;
     right: 5%;
 }
+
+.plan:hover{
+    transform: scale(1.05);
+}
+
+.plan--popular:hover{
+    transform: scale(1.15);
+}
+
 @media screen and (min-width: 1024px){
     .plan__name{
         font-size: 1.4rem;
@@ -454,6 +484,12 @@ a{
 @media screen and (min-width: 768px){
     .grid--1x2{
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 768px){
+    .grid--1x3{
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
@@ -701,4 +737,18 @@ text-align: center;
     .block-domain__prices{
         grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     }
+}
+
+/* Plan Block */
+.block-plans .grid {
+    gap: 8rem 4rem;
+}
+
+.block-plans .card {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.card--secondary .list__item-margin{
+    margin-bottom: 6.5rem;
 }
