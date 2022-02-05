@@ -1,8 +1,8 @@
 {
   "name": "moshify",
   "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
+  "main": "index.js"},
+"scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -24,5 +24,4 @@
   "homepage": "https://github.com/Davood-Qaragouzlou/moshify-Davood-Q#readme",
   "description": ""
 }
-
-
+"build": "parcel build index.html",
